@@ -6,7 +6,7 @@ import java.util.List;
 import br.com.joaocarloslima.vinteum.model.Carta;
 import br.com.joaocarloslima.vinteum.model.Jogo;
 
-// o que a tela recebe depois de cada jogada
+
 public record Estado(List<String> cartasJogador, int pontosJogador,
         List<String> cartasMesa, Integer pontosMesa,
         boolean acabou, String resultado, String estilo, int cartasNoMonte) {
@@ -19,7 +19,7 @@ public record Estado(List<String> cartasJogador, int pontosJogador,
         List<String> mesa = new ArrayList<>();
         List<Carta> cartasMesa = jogo.getMesa().getCartas();
         for (int i = 0; i < cartasMesa.size(); i++) {
-            // enquanto a rodada não acaba, a segunda carta da mesa fica virada para baixo
+
             boolean escondida = !acabou && i == 1;
             mesa.add(escondida ? VERSO : cartasMesa.get(i).getImagem());
         }

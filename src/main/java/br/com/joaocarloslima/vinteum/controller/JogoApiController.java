@@ -15,7 +15,7 @@ import br.com.joaocarloslima.vinteum.model.EstiloDeJogo;
 import br.com.joaocarloslima.vinteum.model.Jogo;
 import br.com.joaocarloslima.vinteum.model.Padrao;
 
-// a tela 3D conversa com o Jogo por aqui (não precisa mexer)
+
 @RestController
 @RequestMapping("/api")
 public class JogoApiController {
